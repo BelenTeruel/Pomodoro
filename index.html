@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="app">
+        <div id="time">
+            <div id="value"></div>
+            <div id="taskName"></div>
+        </div>
+
+        <div class="tasks-container">
+            <div class="form">
+                <form action="" id="form">
+                    <input type="text" id="itTask">
+                    <input type="submit" id="bAdd" value="Agregar Tarea">
+                    <div class="timer-inputs">
+                        <input type="number" id="workTime" min="1" max="60" placeholder="Tiempo de Trabajo">
+                        <input type="number" id="breakTime" min="1" max="60" placeholder="Tiempo de descanso">
+                    </div>
+                </form>
+            </div>
+            <div id="tasks">
+                
+            </div>
+            <div class="buttons-container">
+                <button id="clearCompleted">Limpiar Completadas</button>
+                <button id="clearAll">Limpiar Todas</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

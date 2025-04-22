@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslategray;
+}
+
+#app {
+    background-color: lightsalmon;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: solid 1px white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#time {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#time #value {
+    font-size: 50px;
+    font-weight: bolder;
+    cursor: default;
+    user-select: none;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+.form .timer-inputs {
+    display: flex;
+    gap: 9px;
+}
+input[type="text"] {
+    padding: 5px;
+    border: solid 0.1px white;
+    border-radius: 3px;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: solid 0.1px white;
+    border-radius: 3px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+button, input[type="submit"]{
+    border: none;
+    background-color: rgb(80, 161, 161);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    user-select: none;
+
+}
+
+.task {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.task .completed  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: brown;
+    font-weight: bold;
+}
+
+.start-button {
+    margin-left: 30px;
+}
+.start-button[disabled] {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.done {
+    margin-left: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    padding-top: 40px;
+}
+
+#clearCompleted {
+    background-color:rgba(49, 79, 117, 0.842);
+}
+#clearAll {
+    background-color: rgb(201, 54, 54);
+}
